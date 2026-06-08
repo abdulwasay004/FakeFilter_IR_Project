@@ -1,0 +1,31 @@
+FakeFilter Evaluation Report
+============================
+
+Naive Bayes
+-----------
+Accuracy: 0.6290
+Confusion Matrix labels: REAL, FAKE
+[[186, 263], [207, 611]]
+              precision    recall  f1-score   support
+        REAL       0.47      0.41      0.44       449
+        FAKE       0.70      0.75      0.72       818
+
+Rocchio
+-------
+Accuracy: 0.6030
+Confusion Matrix labels: REAL, FAKE
+[[261, 188], [315, 503]]
+              precision    recall  f1-score   support
+        REAL       0.45      0.58      0.51       449
+        FAKE       0.73      0.61      0.67       818
+
+KNN (k=5)
+---------
+Accuracy: 0.6267
+Confusion Matrix labels: REAL, FAKE
+[[167, 282], [191, 627]]
+              precision    recall  f1-score   support
+        REAL       0.47      0.37      0.41       449
+        FAKE       0.69      0.77      0.73       818
+
+MAP@25 for fake-relevant sample queries: 0.0016
